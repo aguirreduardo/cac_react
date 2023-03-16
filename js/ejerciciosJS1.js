@@ -97,9 +97,9 @@ function ejerciciosJS1_8() {
 function resta(x, y) {
   // Resta "x" de "y" y devuelve el valor
   // Tu código:
-  alert(`${y} - ${x} = ${y - x}`);
+  alert(`${x} - ${y} = ${x - y}`);
   console.log(`Ejercicio 9:
-${y} - ${x} = ${y - x}`);
+${x} - ${y} = ${x - y}`);
 }
 
 function ejerciciosJS1_9() {
@@ -141,6 +141,31 @@ function ejerciciosJS1_11() {
   let num2 = +prompt(`Ingrese el número "y": `);
   divide(num1, num2);
 }
+
+const calculadora = () => {
+  let num1 = +prompt(`Ingrese el número "x": `);
+  let operador;
+  do {
+    operador = prompt(`Que operación deseas realizar (+,-,/,*):`);
+  } while (
+    operador !== "+" &&
+    operador !== "-" &&
+    operador !== "/" &&
+    operador !== "*"
+  );
+
+  operador === "+"
+    ? (operador = suma)
+    : operador === "-"
+    ? (operador = resta)
+    : operador === "*"
+    ? (operador = multiplica)
+    : (operador = divide);
+
+  let num2 = +prompt(`Ingrese el número "y": `);
+
+  operador(num1, num2);
+};
 
 // //////////////////////////////////////////////////////////
 //12-
@@ -260,7 +285,8 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  num % 2 === 0 ? alert(true) : alert(false);
+  // num % 2 === 0 ? alert(true) : alert(false);
+  alert(num % 2 === 0);
   num % 2 === 0
     ? console.log(`Ejercicio 17:
   ${true}
