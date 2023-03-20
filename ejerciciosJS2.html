@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Passions+Conflict&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/74cc7b731d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pacticos Codo a Codo</title>
+    <link
+      rel="shortcut icon"
+      href="./imagen/logocodoacodo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="titulo">
+        <img src="./imagen/logojs.png" alt="logoCodoaCodo" />
+        <h1>Practicos</h1>
+      </div>
+    </header>
+    <div class="nav">
+      <a class="btn btn-primary" href="./index.html" role="button">Inicio</a>
+
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-warning dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          JavaScript
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="./ejercicosJS1.html">EjercicosJS1</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="./ejerciciosJS2.html"
+              >EjerciciosJS2</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="./Ejercicio Arrays.html"
+              >Ejercicios Arrays</a
+            >
+          </li>
+
+          <!-- <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./Guia de ejercicios 2022 BootCamp.pdf">Guia de ejercicios .pdf</a></li>-->
+        </ul>
+      </div>
+      <!-- <div class="btn-group">
+          <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Bases de Datos
+          </button>
+          <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="./desafio_bbdd.html">Desafío BBDD 2022</a></li>
+          <li><a class="dropdown-item" href="#"></a></li>
+
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="./4Desafío Base de datos 2022.pdf">Guia de ejercicios BBDD.pdf</a></li>
+          </ul>
+        </div> -->
+    </div>
+    <main class="container">
+      <p>
+        Una vez ejecutados, tambien podras revisar los ejercicios por consola
+      </p>
+      <ol type="1" class="ol-desaf-bbdd">
+        <!--Ejercicio1-->
+        <li>
+          "x" e "y" son números enteros. <br />Devuelve el número más grande
+          <br />Si son iguales, devuelve cualquiera de los dos
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_1()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio2-->
+        <li>
+          Determinar si la persona según su edad puede ingresar a un evento.
+          <br />Si tiene 18 años ó más, devolver --> "Allowed" <br />Si es
+          menor, devolver --> "Not allowed"
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_2()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio3-->
+        <li>
+          Recibimos un estado de conexión de un usuario representado por un
+          valor numérico. <br />Cuando el estado es igual a 1, el usuario está
+          "Online" <br />Cuando el estado es igual a 2, el usuario está "Away"
+          <br />De lo contrario, presumimos que el usuario está "Offline"
+          <br />Devolver el estado de conexión de usuario en cada uno de los
+          casos.
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_3()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio4-->
+        <li>
+          Devuelve un saludo en tres diferentes lenguajes: <br />Si "idioma" es
+          "aleman", devuelve "Guten Tag!" <br />Si "idioma" es "mandarin",
+          devuelve "Ni Hao!" <br />Si "idioma" es "ingles", devuelve "Hello!"
+          <br />Si "idioma" no es ninguno de los anteiores o es `undefined`
+          devuelve "Hola!"
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_4()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio5-->
+        <li>
+          La función recibe un color. Devolver el string correspondiente:
+          <br />En caso que el color recibido sea "blue", devuelve -> "This is
+          blue" <br />En caso que el color recibido sea "red", devuelve -> "This
+          is red" <br />En caso que el color recibido sea "green", devuelve ->
+          "This is green" <br />En caso que el color recibido sea "orange",
+          devuelve -> "This is orange" <br />Caso default: devuelve --> "Color
+          not found" <br />Usar el statement Switch.
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_5()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio6-->
+        <li>
+          Devuelve "true" si "numero" es 10 o 5 <br />De lo contrario, devuelve
+          "false"
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_6()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio7-->
+        <li>
+          Devuelve "true" si "numero" es menor que 50 y mayor que 20 <br />De lo
+          contrario, devuelve "false"
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_7()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio8-->
+        <li>
+          Devuelve "true" si "numero" es un entero (int/integer) <br />
+          Ejemplo: 0.8 -> false <br />
+          Ejemplo: 1 -> true <br />
+          Ejemplo: -10 -> true <br />
+          De lo contrario, devuelve "false" <br />
+          Pista: Puedes resolver esto usando `Math.floor`
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_8()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio9-->
+        <li>
+          Si "numero" es divisible entre 3, devuelve "fizz" <br />Si "numero" es
+          divisible entre 5, devuelve "buzz" <br />Si "numero" es divisible
+          entre 3 y 5 (ambos), devuelve "fizzbuzz" <br />De lo contrario,
+          devuelve el numero
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_9()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio10-->
+        <li>
+          La función recibe tres números distintos. <br />Si num1 es mayor a
+          num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y
+          positivo" <br />Si alguno de los tres números es negativo, retornar
+          ---> "Hay negativos" <br />Si num3 es más grande que num1 y num2,
+          aumentar su valor en 1 y retornar el nuevo valor. <br />0 no es ni
+          positivo ni negativo. Si alguno de los argumentos es 0, retornar
+          "Error". <br />Si no se cumplen ninguna de las condiciones anteriores,
+          retornar false.
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_10()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio11-->
+        <li>
+          Devuelve "true" si "numero" es primo <br />
+          De lo contrario devuelve "falso" <br />
+          Pista: un número primo solo es divisible por sí mismo y por 1 <br />
+          Pista 2: Puedes resolverlo usando un bucle `for` <br />
+          Nota: Los números 0 y 1 NO son considerados números primos
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_11()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio12-->
+        <li>
+          Escribe una función que reciba un valor booleano y retorne “Soy
+          verdadero” si su valor es true y “Soy falso” si su valor es false.
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_12()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio13-->
+        <li>Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
+            <br}>La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.</li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_13()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio14-->
+        <li>Leer un número entero y determinar si tiene 3 dígitos.</li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_14()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio15-->
+        <li>Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
+            <br>Retornar el valor final.
+            <br>Usar el bucle do ... while.</li>
+        <input
+          type="button"
+          onclick="ejerciciosJS2_15()"
+          value="Ejecutar"
+          id="button1"
+        />
+      </ol>
+    </main>
+    <footer>
+      <div>
+        <i class="fa-regular fa-envelope"></i>
+        <a href="mailto:aguirreduardoa@gmail.com" target="_blank">
+          aguirreduardoa@gmail.com</a
+        >
+      </div>
+      <div>
+        <i class="fa-brands fa-whatsapp"></i>
+        <a href="https:/wa.me/+5493813576962" target="_blank"> +543813576962</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-github"></i
+        ><a
+          href="https://github.com/aguirreduardo/cac_react.git"
+          target="_blank"
+          >GITHUB</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/ejerciciosJS2.js"></script>
+  </body>
+</html>

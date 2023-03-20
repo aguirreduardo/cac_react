@@ -34,11 +34,13 @@
   <body>
     <header>
       <div class="titulo">
-        <img src="./imagen/logocodoacodo.png" alt="logoCodoaCodo" />
+        <img src="./imagen/logojs.png" alt="logoCodoaCodo" />
         <h1>Practicos</h1>
       </div>
     </header>
     <div class="nav">
+      <a class="btn btn-primary" href="./index.html" role="button">Inicio</a>
+
       <div class="btn-group">
         <button
           type="button"
@@ -82,15 +84,88 @@
           </ul>
         </div> -->
     </div>
-    <main></main>
+    <main class="container">
+      <p>
+        Una vez ejecutados, tambien podras revisar los ejercicios por consola
+      </p>
+      <ol type="1" class="ol-desaf-bbdd">
+        <!--Ejercicio1-->
+        <li>
+          Declarar un array que vamos a llamar “clasificaciones” con los
+          siguientes valores: Marcos, Franco, Agostina, Leon, Juan Cruz,Eduardo
+          <br />(vamos a suponer que esa es la orden de clasificación de un
+          concurso)
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosArray_1()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio2-->
+        <li>
+          Recorre el array (clasificaciones) e Imprime la clasificación actual.
+          <br />(realizar una funcion "mostrarClasificacion()" esa funcion debe
+          recorrer el array con un bucle for y mostrar la clasificacion)
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosArray_2()"
+          value="Ejecutar"
+          id="button1"
+        />
+
+        <!--Ejercicio3-->
+        <li>
+          El concurso continua, y se van modifican esas posiciones anteriores.
+          Debemos cambiar en el array: <br />
+          <ol type="a">
+            <li>Leon adelanta a Agostina</li>
+            <li>Eduardo es descalificado y se elimina del concurso */</li>
+
+            <li>
+              Detrás de Marcos y antes de Franco se clasifican dos nuevas
+              concursantes: Julieta y Martina, en ese orden
+            </li>
+
+            <li>
+              Hay una nueva participante que pasa a encabezar la clasificación:
+              Alicia
+            </li>
+
+            <li>
+              muestra la clasificación actualizada (mostrarClasificacion())y
+              comprueba que se ha hecho correctamente
+            </li>
+          </ol>
+        </li>
+        <input
+          type="button"
+          onclick="ejerciciosArray_3()"
+          value="Ejecutar"
+          id="button1"
+        />
+      </ol>
+    </main>
     <footer>
       <div>
         <i class="fa-regular fa-envelope"></i>
-        <a href="mailto:aguirreduardoa@gmail.com"> aguirreduardoa@gmail.com</a>
+        <a href="mailto:aguirreduardoa@gmail.com" target="_blank">
+          aguirreduardoa@gmail.com</a
+        >
       </div>
       <div>
         <i class="fa-brands fa-whatsapp"></i>
-        <a href="https:/wa.me/+5493813025955"> +543813576962</a>
+        <a href="https:/wa.me/+5493813576962" target="_blank"> +543813576962</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-github"></i
+        ><a
+          href="https://github.com/aguirreduardo/cac_react.git"
+          target="_blank"
+          >GITHUB</a
+        >
       </div>
     </footer>
 
@@ -99,6 +174,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/Ejercicio Arrays.js"></script>
   </body>
 </html>
